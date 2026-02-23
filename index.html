@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarKod - Akıllı Alışveriş ve Fiyat Karşılaştırma</title>
+    <meta name="description" content="Barkod okutarak BİM, A101, ŞOK ve Migros fiyatlarını anında karşılaştırın. Çağatay ERTÜRK tarafından geliştirilen yerli uygulama MarKod ile tasarruf edin.">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body { font-family: 'Poppins', sans-serif; }
+        .hero-bg {
+            background: linear-gradient(135deg, #10b981 0%, #3b82f6 100%);
+        }
+        .store-btn {
+            transition: transform 0.2s ease-in-out;
+        }
+        .store-btn:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <nav class="bg-white shadow-sm py-4">
+        <div class="max-w-6xl mx-auto px-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-blue-600 flex items-center gap-2">
+                <i class="fa-solid fa-barcode"></i> MarKod
+            </div>
+            <div>
+                <a href="#indir" class="bg-blue-600 text-white px-5 py-2 rounded-full font-semibold hover:bg-blue-700 transition">Hemen İndir</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-bg text-white py-20 text-center px-4">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Market Market Gezmeye Son!</h1>
+            <p class="text-lg md:text-xl mb-10 text-blue-50">
+                Barkodu okutun; BİM, A101, ŞOK, Migros, CarrefourSA ve Tarım Kredi fiyatlarını anında tek ekranda görün. En uygununu bulun, tasarruf edin.
+            </p>
+            
+            <div id="indir" class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="#" target="_blank" class="store-btn bg-black text-white px-8 py-3 rounded-xl flex items-center gap-3 border border-gray-700">
+                    <i class="fa-brands fa-google-play text-2xl"></i>
+                    <div class="text-left">
+                        <div class="text-xs">Google Play'den</div>
+                        <div class="text-xl font-bold">ÜCRETSİZ İNDİR</div>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="mt-8 text-sm text-blue-100 flex items-center justify-center gap-2">
+                <i class="fa-solid fa-star text-yellow-300"></i>
+                <i class="fa-solid fa-star text-yellow-300"></i>
+                <i class="fa-solid fa-star text-yellow-300"></i>
+                <i class="fa-solid fa-star text-yellow-300"></i>
+                <i class="fa-solid fa-star text-yellow-300"></i>
+                <span class="ml-2 font-semibold">Değerlendirmeleriniz bizim için çok önemli!</span>
+            </div>
+        </div>
+    </header>
+
+    <section class="py-10 bg-white border-b">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <p class="text-gray-500 font-semibold mb-6 text-sm tracking-wider uppercase">Desteklenen Marketler</p>
+            <div class="flex flex-wrap justify-center items-center gap-6 md:gap-12 text-xl font-bold text-gray-400">
+                <span class="text-red-600">BİM</span>
+                <span class="text-cyan-600">A101</span>
+                <span class="text-yellow-500">ŞOK</span>
+                <span class="text-orange-500">MİGROS</span>
+                <span class="text-blue-800">CarrefourSA</span>
+                <span class="text-green-700">Tarım Kredi</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 max-w-6xl mx-auto px-4">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold text-gray-800">Neden MarKod Kullanmalısınız?</h2>
+            <p class="text-gray-600 mt-4">Enflasyona karşı bütçenizi koruyan 3 temel özellik.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 text-center hover:-translate-y-2 transition duration-300">
+                <div class="w-16 h-16 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center text-3xl mx-auto mb-6">
+                    <i class="fa-solid fa-scale-balanced"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Fiyat Kıyaslaması</h3>
+                <p class="text-gray-600 text-sm">Ürünün barkodunu okutun, 6 farklı zincir marketteki fiyatları saniyeler içinde karşılaştırın. En uygun fiyata anında ulaşın.</p>
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 text-center hover:-translate-y-2 transition duration-300">
+                <div class="w-16 h-16 bg-red-100 text-red-500 rounded-full flex items-center justify-center text-3xl mx-auto mb-6">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Favori Listesi</h3>
+                <p class="text-gray-600 text-sm">Sürekli tükettiğiniz ürünleri favorilerinize ekleyin. İndirimleri ve fiyat değişimlerini tek ekrandan zahmetsizce takip edin.</p>
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 text-center hover:-translate-y-2 transition duration-300">
+                <div class="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-3xl mx-auto mb-6">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Akıllı Sepet</h3>
+                <p class="text-gray-600 text-sm">Alışveriş listenizi oluşturun. Ürünleri sepete ekleyerek kasaya gitmeden toplam tutarı görün, sürprizlerle karşılaşmayın.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-400 py-10 text-center">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-2xl font-bold text-white mb-4 flex items-center justify-center gap-2">
+                <i class="fa-solid fa-barcode"></i> MarKod
+            </div>
+            <p class="mb-4">Yerli Üretim. Kendi Geliştirdiğim Uygulama.</p>
+            <p class="text-sm border-t border-gray-800 pt-6 mt-6">
+                &copy; 2026 MarKod. Tüm Hakları Saklıdır.<br>
+                <span class="text-white font-semibold mt-2 inline-block">Geliştirici: Çağatay ERTÜRK</span>
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
