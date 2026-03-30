@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MarKod - Ürün Detaylarına Yönlendiriliyorsunuz</title>
     
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F8J0MLF2C5"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HBPDZKSWJ2"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', 'G-F8J0MLF2C5');
+      gtag('config', 'G-HBPDZKSWJ2');
     </script>
 
     <script src="https://cdn.tailwindcss.com"></script>
@@ -52,10 +52,10 @@
 
         // URL'deki bilgileri ve parametreleri yakalayalım
         const urlParams = new URLSearchParams(window.location.search);
-        const myReferrer = urlParams.get('referrer') || 'direct_share'; // Parametre yoksa 'direct_share' yazar
-        const currentPath = window.location.pathname; // Hangi barkod tıklandı?
+        const myReferrer = urlParams.get('referrer') || 'direct_share'; 
+        const currentPath = window.location.pathname; // Tıklanan barkod yolunu yakalar
 
-        // GA4 Etkinliği Gönder
+        // GA4 Etkinliği Gönder (Yeni kod ile)
         gtag('event', 'product_link_click', {
             'referrer_id': myReferrer,
             'barcode_path': currentPath,
@@ -66,7 +66,7 @@
 
         // 5 Saniye sonra Play Store'a uçur
         setTimeout(function() {
-            window.location.href = "https://play.google.com/store/apps/details?id=com.cagatayerturk.markod";
+            window.location.href = "https://play.google.com/store/apps/details?id=com.cagatayerturk.markod&hl=tr";
         }, 5000);
     </script>
 </body>
